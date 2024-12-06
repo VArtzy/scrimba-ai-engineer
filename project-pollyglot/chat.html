@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Parkinsans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cover">
+            <div class="flex" style="position: absolute">
+                <img width="100" src="./assets/parrot.png" alt="">
+                <div class="">
+                    <h1 style="color: green; margin-bottom: 0.25em;">PollyGlot</h1>
+                    <h5 style="color: white; font-weight: 500">Perfect Your Languange</h5>
+                </div>
+            </div>
+            <img height="200" src="./assets/worldmap.png" alt=""> 
+        </header>
+
+        <div class="app">
+            <div id="chat">
+                <p class="bot">Select the languange you want me to translate, then send your message!</p>
+            </div>
+            <textarea id="input" style="width: 100%; height: 70px; background-color: #eee; border-radius: .5em; padding: 1em" name="input" id="input" placeholder="How are you?"></textarea>
+            <button id="translate" class="position: absolute; display: inline">></button>
+            <h4 id="error"></h4>
+            <div class="flex">
+                <input type="radio" id="french" name="lang" value="french">
+                <label for="french"><img width="20" src="./assets/fr-flag.png" alt=""></label><br>
+
+                <input type="radio" id="bahasa" name="lang" value="bahasa">
+                <label for="bahasa"><img width="20" src="./assets/sp-flag.png" alt=""></label><br>
+
+                <input type="radio" id="japanese" value="japanese" name="lang">
+                <label for="japanese"><img width="20" style="outline: 1px solid black" src="./assets/jpn-flag.png" alt=""></label><br>
+            </div>
+        </div>
+        <script src="chat.js" type="module"></script>
+    </body>
+</html>

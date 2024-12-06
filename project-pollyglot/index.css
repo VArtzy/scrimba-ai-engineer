@@ -1,0 +1,72 @@
+:root {
+    --form-control-color: blue;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Parkinsans';
+    letter-spacing: 2px;
+}
+
+body {
+    accent-color: blue;
+    max-width: 509px;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.cover {
+    display: grid;
+    gap: 4em;
+    place-items: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.app {
+    margin-inline: 2em;
+    margin-block: 2em;
+    padding-inline: 1em;
+    padding-block: 1em;
+    outline: 1px solid black;
+    border-radius: 1em;
+    text-align: center;
+    display: grid;
+    gap: 1.5em;
+    color: blue;
+}
+
+.bot {
+    background-color: blue;
+    color: white;
+    padding: 1em;
+    border-radius: .5em;
+    font-size: 1em;
+}
+
+.user {
+    background-color: green;
+    color: white;
+    padding: 1em;
+    border-radius: .5em;
+    font-size: 1em;
+}
+
+#chat {
+    text-align: left;
+    display: grid;
+    gap: 1em;
+}
+
+#error {
+    color: red;
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Parkinsans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cover">
+            <div class="flex" style="position: absolute">
+                <img width="100" src="./assets/parrot.png" alt="">
+                <div class="">
+                    <h1 style="color: green; margin-bottom: 0.25em;">PollyGlot</h1>
+                    <h5 style="color: white; font-weight: 500">Perfect Your Languange</h5>
+                </div>
+            </div>
+            <img height="200" src="./assets/worldmap.png" alt=""> 
+        </header>
+
+        <div class="app">
+            <h2>Text to translate</h2>
+
+            <textarea id="input" style="width: 100%; height: 100px; background-color: #eee; border-radius: .5em; padding: 1em" name="input" id="input" placeholder="How are you?"></textarea>
+            <h4 id="error"></h4>
+            <h2>Select languange</h2>
+
+            <div id="content" style="text-align: left; color: #333; min-height: 70px">
+                <input type="radio" id="french" name="lang" value="french">
+                <label for="french">French <img width="20" src="./assets/fr-flag.png" alt=""></label><br>
+
+                <input type="radio" id="bahasa" name="lang" value="bahasa">
+                <label for="bahasa">Indonesia <img width="20" src="./assets/sp-flag.png" alt=""></label><br>
+
+                <input type="radio" id="japanese" value="japanese" name="lang">
+                <label for="japanese">Japanese <img width="20" style="outline: 1px solid black" src="./assets/jpn-flag.png" alt=""></label><br>
+            </div>
+            <button id="translate" style="background-color: blue; color: white; padding-inline: 8em; padding-block: .5em; border-radius: .25em; outline: 1px solid white; font-weight: 600; font-size: 1em">Translate</button>
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
