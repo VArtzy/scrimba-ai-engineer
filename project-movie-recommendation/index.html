@@ -5,6 +5,26 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <header>
+            <img src="static/PopChoice.png" alt="">
+            <h1>PopChoice</h1>
+        </header>
+
+        <main>
+            <h3>What's your favorite movie and why?</h3>
+            <textarea name="favorite" id="favorite" placeholder="The Shawshank Redepmtion because it taught me to never give up hope no matter how hard life gets"></textarea>
+
+            <h3>Are you in the mood for something new or a classic?</h3>
+            <input type="text" id="mood" name="mood" placeholder="I want to watch movies that were released after 1990" />
+
+            <h3>Do you wanna have fun or do you want to something serious?</h3>
+            <input type="text" id="serious" name="serious" placeholder="I want to watch something stupid and fun" />
+
+            <h3 id="error"></h3>
+        </main>
+
+        <button id="submit">Let's Go</button>
+
         <script type="module" src="index.js"></script>
     </body>
 </html> 

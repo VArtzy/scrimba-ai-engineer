@@ -2,3 +2,90 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+body {
+    max-width: 345px;
+    background-color: #000C36;
+    color: #FFE;
+    font-family: "robotoSlab";
+    padding: 2em;
+}
+
+img {
+    margin: auto;
+}
+
+h1 {
+    font-family: "carterOne";
+    font-size: 3em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1em;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+header {
+    display: grid;
+    place-content: center;
+}
+
+input, textarea {
+    background-color: #3B4877;
+    border-radius: 10px;
+    padding: .5em;
+    font-size: 1.1em;
+    color: #FFE;
+    font-family: "robotoSlab";
+    letter-spacing: 1.1px;
+    border: none;
+}
+
+textarea {
+    width: 325px;
+    height: 125px;
+}
+
+input {
+    width: 325px;
+    height: 50px;
+}
+
+button {
+    color: #000C36;
+    background-color: #51E08A;
+    padding: .5em 4em;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-family: "carterOne";
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    cursor: pointer;
+}
+
+#error {
+    color: red;
+}
+
+@font-face {
+    font-family: "robotoSlab";
+    src: url("./static/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "carterOne";
+    src: url("./static/Carter_One/CarterOne-Regular.ttf");
+}
