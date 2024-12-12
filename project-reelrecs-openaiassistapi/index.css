@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+        font-family: 'Signika Negative', sans-serif;
+    color: #284b63;
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+body {
+    padding: 20px;
+}
+
+form {
+    border: solid 2px #284b63;
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+input,
+button {
+    padding: 10px 15px;
+}
+
+input {
+    font-size: 1.15rem;
+    flex: 1;
+    border: none;
+}
+
+button {
+    color: #fff;
+    line-height: 0;
+    background-color: #284b63;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #416e8d;
+}
+
+.icon {
+    font-size: 1.75rem;
+}
+
+.reply {
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
