@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #343D3F; 
+  padding-bottom: 20px;
+  color: #222;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9); /* Slight white tint */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+  margin: 40px auto 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* White border */
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #204F86;
+  margin: 0;
+}
+
+.subtitle {
+  color: #264653;
+  font-size: 20px;
+  margin: 0 0 32px;
+}
+
+.poster-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button,
+input {
+  font-size: 1.125rem;
+}
+
+input[type="text"],
+select {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px;
+  border: 2px solid #443C76;
+  background: #f0f0f0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background: #443C76;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #554d8c;
+}
+
+.poster-output {
+  font-weight: bold;
+  margin-top: 20px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1); /* Transparent black background */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .poster-form {
+      flex-direction: column;
+  }
+
+  input[type="text"], button {
+      width: 100%;
+  }
+}

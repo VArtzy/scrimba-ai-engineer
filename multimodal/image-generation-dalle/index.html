@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Mashup App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Film-Fusion</h1>
+      <p class="subtitle">Merge movies and art into one poster</p>
+      <form id="posterForm" class="poster-form">
+        <label for="movie-title" class="hidden">Movie Title:</label>
+        <input type="text" id="movie-title" placeholder="Movie title" required/>
+        
+        <label for="art-styles" class="hidden">Art Styles:</label>
+        <select id="art-styles" name="art-styles" required>
+            <option value="" disabled selected>Choose art style</option>
+            <option value="art deco">Art Deco</option>
+            <option value="impressionism">Impressionism</option>
+            <option value="expressionism">Expressionism</option>
+            <option value="surrealism">Surrealism</option>
+            <option value="cubism">Cubism</option>
+            <option value="cyberpunk">Cyberpunk</option>
+            <option value="abstract">Abstract</option>
+            <option value="pop art">Pop Art</option>
+            <option value="minimalism">Minimalism</option>
+            <option value="futurism">Futurism</option>
+            <option value="neoclassicism">Neo-Classicism</option>
+            <option value="romanticism">Romanticism</option>
+        </select>
+        <button type="submit" id="generatePosterBtn">Generate Poster</button>
+      </form>
+      <div id="poster-output" class="poster-output"></div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

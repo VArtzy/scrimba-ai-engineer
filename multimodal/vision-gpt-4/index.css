@@ -1,0 +1,20 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+  
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  background: #000000ed;
+}
+
+img {
+  width: 70%;
+  max-width: 1000px;
+  border: solid 1px rgba(255,255,255, 0.65);
+}
