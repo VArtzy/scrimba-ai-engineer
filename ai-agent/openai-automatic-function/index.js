@@ -1,15 +1,10 @@
 import OpenAI from "openai"
-import { getCurrentWeather, getLocation, functions } from "./tools"
+import { functions } from "./tools"
 
 export const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
     dangerouslyAllowBrowser: true
 })
-
-const availableFunctions = {
-    getCurrentWeather,
-    getLocation
-}
 
 async function agent(query) {
     const messages = [
