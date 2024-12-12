@@ -7,6 +7,64 @@
 </head>
 
 <body>
+    <div id="content">
+        <img src="static/ai travel agent 1.png" alt="travel logo">
+        <button id="start" class="btn rounder">Let's Begin</button>
+    </div>
+
+    <template id="question">
+        <h2>Number of travellers</h2>
+        <div class="travellers rounder">
+            <button id="decrement">-</button>
+            <span id="count">1</span>
+            <button id="increment">+</button>
+        </div>
+
+        <h2>Flying from</h2>
+        <input placeholder="New York City" class="rounder" type="text" name="from" id="from">
+
+        <h2>Flying to</h2>
+        <input placeholder="Paris" class="rounder" type="text" name="to" id="to">
+
+        <h2>From date</h2>
+        <input placeholder="2023-11-24" class="rounder" type="date" name="fromDate" id="fromDate">
+
+        <h2>To date</h2>
+        <input placeholder="2023-12-05" class="rounder" type="date" name="toDate" id="toDate">
+
+        <h2>Budget</h2>
+        <div style="position: relative">
+            <span id="dollar">$</span>
+            <input placeholder="5000" class="rounder" type="number" name="budget" id="budget">
+        </div>
+
+        <button id="submit" class="btn rounder">Plan my Trip!</button>
+    </template>
+
+    <template id="result">
+        <h2>Your Trip</h2>
+        <div class="flex">
+            <div id="info-start-date" class="date rounder">-> 25th Nov 23</div>
+            <div id="info-end-date" class="date rounder">5th Dec 23 &lt;- </div>
+        </div>
+        <div id="info-place" class="place rounder">New York City -> Paris</div>
+
+        <h3>Weather</h3>
+        <div id="info-weather" class="info rounder">You can expect the weather to be quite mild. Low will be 19deg and high will be 25deg</div>
+
+        <h3>Flights</h3>
+        <div id="info-flight" class="info rounder">
+            <p>The best option for you is with Delta Airlines with a layover is Oslo</p>
+            <button id="book" class="btn rounder">Book</button>
+        </div>
+
+        <h3>Hotel</h3>
+        <div id="info-hotel" class="info rounder">
+            <p>The best option for you is the Hilton Hotel. It is a 5-star hotel with a rating of 4.5. The price is $200 per night</p>
+            <button id="book" class="btn rounder">Book</button>
+        </div>
+    </template>
+
 	<script type="module" src="index.js"></script>
 </body>
 

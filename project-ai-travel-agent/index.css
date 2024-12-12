@@ -1,4 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
+}
+
+body {
+    max-width: 360px;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Inter';
+    background-color: #F2FFFF;
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+input {
+    text-align: center;
+    width: 100%;
+    padding: 0.25em 1em;
+    backround-color: #F2FFFF;
+    outline: none;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    font-size: 1.5em;
+    background-color: #4BDCB0;
+    font-family: inherit;
+    padding: 0.5em 4em;
+    margin: auto;
+    display: block;
+}
+
+.rounder {
+    border-radius: 40px;
+    outline: 4px solid #000;
+}
+
+.travellers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    gap: 1em;
+    padding: .25em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.date, .place, .info {
+    background-color: #BBF7F7;
+    padding: .75em;
+}
+
+.place {
+    font-size: 1.5em;
+}
+
+.info {
+    font-size: .9em;
+    text-align: left;
+}
+
+#dollar {
+    position: absolute;
+    left: 30%;
+    font-size: 2em;
+}
+
+#budget {
+    margin-bottom: 1em;
+}
+
+#increment, #decrement {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("./static/Inter_24pt-Bold.ttf");
 }
