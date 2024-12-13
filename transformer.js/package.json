@@ -1,0 +1,14 @@
+{
+  "name": "Scrim-s05rntj",
+  "description": "https://scrimba.com/the-ai-engineer-path-c02v/~01f/s0ibia5or2/head",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
