@@ -1,0 +1,20 @@
+html, body {
+    margin: 0;
+    display: grid;
+    background: #212121;
+    place-items: center;
+    grid-gap: 2rem;
+    padding: 16px;
+}
+
+audio {
+    max-width: 300px;
+}
+
+#old-image {
+    width: 100%
+}
+
+#new-image {
+    width: 100%
+}
