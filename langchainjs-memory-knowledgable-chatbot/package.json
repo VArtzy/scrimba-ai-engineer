@@ -1,0 +1,16 @@
+{
+  "name": "Scrim-s05ksuj",
+  "description": "https://scrimba.com/the-ai-engineer-path-c02v/~042",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "langchain": "0.0.152",
+    "@supabase/supabase-js": "2.36.0",
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
