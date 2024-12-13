@@ -14,8 +14,8 @@ const oldImageUrl = "/old-photo.jpeg"
 const oldImageResponse = await fetch(oldImageUrl)
 const oldImageBlob = await oldImageResponse.blob()
 
-const prompt = `An elderly couple walks together on a gravel path with green 
-grass and trees on each side. Wearing neutral-colored clothes, they face away
+const prompt = `A concept art of by Makoto Shinkai. An elderly couple walks together on a gravel path with green 
+grass and trees on each side. Wearing neutral-colored clothes, looking forward to go home, they face away
  from the camera as they carry their bags.`
 
 const newImageBlob = await hf.imageToImage({
