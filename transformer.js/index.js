@@ -1,4 +1,4 @@
-import { pipeline } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.8.0'
+import { pipeline } from "@huggingface/transformers"
 
 // Reference the HTML elements that we will need
 const status = document.getElementById('status')
@@ -8,7 +8,8 @@ const imageContainer = document.getElementById('image-container')
 
 // Create a new object detection pipeline
 status.textContent = 'Loading model...'
-const detector = await pipeline('object-detection', 'Xenova/yolos-tiny')
+const detector = await pipeline('object-detection');
+// const detector = await pipeline('object-detection', 'Xenova/yolos-tiny');
 
 // Enable Object Detection
 detectObjectsButton.addEventListener('click', detectAndDrawObjects)
