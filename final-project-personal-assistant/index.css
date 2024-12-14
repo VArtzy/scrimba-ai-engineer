@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 360px;
+    background-color: #012442;
+    display: grid;
+    place-items: center;
+    margin: 2rem auto;
+    font-family: 'Inter';
+}
+
+img {
+    border-radius: 50%;
+}
+
+textarea, button {
+    font-size: 1rem;
+}
+
+textarea {
+    display: block;
+    background-color: #073A67;
+    border: 4px solid #3F607C;
+    border-radius: 10px;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    padding: 0.5rem;
+    color: #F1F8FF;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+span {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+h1 {
+    font-family: 'Merriweather';
+    letter-spacing: 0.1rem;
+    color: #F1F8FF;
+}
+
+#submit {
+    background-color: #33628A;
+    color: #F1F8FF;
+    width: 100%;
+}
+
+#capture {
+    background-color: #F1F8FF;
+    color: #012442;
+    width: 50%;
+}
+
+.user, .bot {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.user {
+    background-color: #33628A;
+    color: #F1F8FF;
+}
+
+.bot {
+    background-color: #F1F8FF;
+    color: #012442;
+}
+
+main {
+    height: 50vh;
+    overflow-y: auto;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('static/Inter/Inter-VariableFont_opsz,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('static/Merriweather/Merriweather-Regular.ttf');
+}
